@@ -26,14 +26,14 @@ public class Menu {
 				
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(100, 380);//Taille de la fenetre
-		frame.setBounds(100,100,Global.LARGEUR,Global.HAUTEUR); //Coordonne de la position de la fenetre dans l'ecran
+		frame.setBounds(100,100,Global.LARGEUR,Global.HAUTEUR); //Coordonnés de la position de la fenêtre dans l'écran
 		frame.setBackground(Color.WHITE);
 		frame.getContentPane().setBackground(Color.WHITE);
 		
 		/************
 		 * Bouton Quitter
 		 */
-		JButton btnQuitter = new JButton("Quitter");//Creation du bouton Quitter
+		JButton btnQuitter = new JButton("Quitter");//Création du bouton Quitter
 		btnQuitter.setBackground(Color.WHITE);
 		btnQuitter.addMouseListener(new MouseAdapter() {
 			@Override
@@ -43,12 +43,12 @@ public class Menu {
 		});
 		frame.getContentPane().setLayout(null);
 		btnQuitter.setBounds(460, 450, 204, 68);//Position du Bouton Quitter dans la frame
-		frame.getContentPane().add(btnQuitter);//Ajout a la Frame du bouton Quitter
+		frame.getContentPane().add(btnQuitter);//Ajout à la Frame le bouton Quitter
 				
 		/*******
 		 * Bouton Jouer
 		 */
-		JButton btnJouer = new JButton("Jouer");//Creation du bouton Jouer
+		JButton btnJouer = new JButton("Jouer");//Création du bouton Jouer
 		btnJouer.setBackground(Color.WHITE);
 		btnJouer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

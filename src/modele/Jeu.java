@@ -17,7 +17,7 @@ public class Jeu {
 		return tour;
 	}
 
-	// Si une case est vide ou deja utiliser
+	// Si une case est vide ou déjà utilisée
 	public boolean triggeraction(int ligne, int col) {
 
 		if (ligne < 0 || ligne > 12 || col < 0 || col > 10) {
@@ -45,8 +45,8 @@ public class Jeu {
 		return point;
 	}
 
-	// Representation du Plateau en console et initialisation de ce plateau 1 =
-	// JouRouge // 2 = JouBleu // 0 = case non utiliser
+	// Représentation du Plateau en console et initialisation de ce plateau 1 =
+	// PionRouge = 1 // PionBleu = 2 // 0 = case non utilisée
 	public static void Plateauconsole() {
 		int i;
 		int j;
@@ -117,7 +117,7 @@ public class Jeu {
 		}
 
 		/*
-		 * Pour une case i j du tableau verifie qu'il y a un pions rouge ou bleu autour
+		 * Pour une case i j du tableau vérifie qu'il y a un pion rouge ou bleu autour
 		 */
 		for(int t = 1; t <= 10; t++) {
 		for (i = 1; i <= 12; i++) {

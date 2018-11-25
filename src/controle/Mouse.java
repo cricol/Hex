@@ -28,7 +28,7 @@ public class Mouse extends MouseAdapter{
 		int lignemin = 0;
 		
 		int k=0;
-		//Regarde quel hexagone est le plus pres du clic du joueur
+		//Regarde quel hexagone est le plus près du clic du joueur
 		for (int i = 5 - k ; i <= 15 ; i++){
 		k++;
 		col = 0;
@@ -53,7 +53,7 @@ public class Mouse extends MouseAdapter{
 		}
 		
 		//Jeu.Plateauconsole();
-		jeu.triggeraction(lignemin+1, colmin+1);//Envoi les coordonne du clic du bonne hexagone 
+		jeu.triggeraction(lignemin+1, colmin+1);//Envoi les coordonnes du clic du bonne hexagone 
 
 		System.out.println(jeu.gagnant() );
 		if(jeu.gagnant() == 2) {

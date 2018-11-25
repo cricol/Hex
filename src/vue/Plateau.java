@@ -11,9 +11,7 @@ import controle.Mouse;
 import modele.Jeu;
 
 public class Plateau extends JComponent {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	Mouse mouse;
 	Jeu jeu;
@@ -46,19 +44,18 @@ public class Plateau extends JComponent {
 		
 		/**
 		 * Create the panel.
-		 * @return 
 		 */
 	public void Hexagone()  {
 		setPreferredSize(new Dimension(Global.LARGEUR,Global.HAUTEUR));
 		}
 		
-	//Comment l'Hexagone doit etre dessiner
+	//Comment l'Hexagone doit être dessiné
 	public void paintHexa(Graphics g, int x, int y, int state) {
     	
     	int xpoints[] = {x,(x+b),(x+b),x,(x-b),(x-b)};
 	    int ypoints[] = {(y-Global.RAYON),(y-a),(y+a),(y+Global.RAYON),(y+a),(y-a)};
 	    
-	    if(state == 0) {//Quel type d'hexagone doit etre colorier
+	    if(state == 0) {//Quel type d'hexagone doit être colorié
 	    	g.setColor(Color.WHITE);
 	    	g.fillPolygon(xpoints,ypoints,6);
 	    	g.setColor(Color.BLACK);
@@ -122,7 +119,7 @@ public class Plateau extends JComponent {
 	
 	
 	
-	//Dessine les bords des joeuurs
+	//Dessine les bords des joueurs
 		public void paintBordure(Graphics g){
 			int xPoints1[] = {290,770,525,30};
 			int yPoints1[] = {105,110,510,510};
